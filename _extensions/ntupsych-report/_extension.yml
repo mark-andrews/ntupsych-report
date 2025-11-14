@@ -1,0 +1,18 @@
+title: NTU Psychology Report
+author: Mark Andrews
+version: 1.0.0
+contributes:
+  formats:
+    pdf:
+      template: template.tex
+      include-in-header: include.tex
+      filters:
+        - git-version.lua
+      number-sections: true
+      classoption: a4paper
+      geometry:
+        - left=2.54cm
+        - right=2.54cm
+        - top=3.00cm
+        - bottom=2.54cm
+        - headsep=1.2cm
