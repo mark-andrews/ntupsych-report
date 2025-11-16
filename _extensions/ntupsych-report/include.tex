@@ -21,9 +21,10 @@
 \usepackage{endnotes}
 
 % Set up fancy headers and footers
+% Note: short-title is defined in template.tex
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
-\fancyhead[L]{$if(short-title)$$short-title$$endif$}
+\fancyhead[L]{\shorttitletext}
 \fancyhead[R]{Nottingham Trent University}
 \fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0pt}

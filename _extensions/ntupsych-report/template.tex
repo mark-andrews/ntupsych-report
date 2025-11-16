@@ -435,6 +435,12 @@ $if(version)$
 \newcommand{\version}{$version$}
 $endif$
 
+$if(short-title)$
+\newcommand{\shorttitletext}{$short-title$}
+$else$
+\newcommand{\shorttitletext}{}
+$endif$
+
 \author{$for(author)$$author$$sep$ \and $endfor$}
 \date{$date$}
 $if(beamer)$
