@@ -6,8 +6,7 @@ contributes:
     pdf:
       template: template.tex
       include-in-header: include.tex
-      template-partials:
-        - ntu_psychology_logo.png
+      logo: ntu_psychology_logo.png
       filters:
         - git-version.lua
       number-sections: true
