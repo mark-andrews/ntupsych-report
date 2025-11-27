@@ -2,6 +2,12 @@
 \renewcommand\familydefault{\sfdefault} 
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
+
+% Define pandocbounded for newer Pandoc versions
+\makeatletter
+\def\pandocbounded#1{\begin{minipage}{\linewidth}#1\end{minipage}}
+\makeatother
+
 \usepackage{pagecolor}
 \usepackage{lipsum}
 \usepackage{afterpage}
