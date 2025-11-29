@@ -5,6 +5,10 @@
 \usepackage{float}
 \floatplacement{table}{H}
 
+% Prevent widows and orphans
+\usepackage[all]{nowidow}
+\usepackage{needspace}
+
 % Define pandocbounded for newer Pandoc versions
 \makeatletter
 \def\pandocbounded#1{\begin{minipage}{\linewidth}#1\end{minipage}}
@@ -38,8 +42,8 @@
 \renewcommand{\headrulewidth}{0.4pt}
 
 \newcommand{\hruleafter}[1]{#1\par\vspace{-5mm}\noindent\textcolor{foocolour}{\makebox[\linewidth]{\rule{\textwidth}{0.5pt}}}}
-\titleformat{\section}{\fontsize{18}{18}\bfseries}{\thesection}{1em}{\hruleafter}
-\titleformat{\subsection}{\fontsize{14}{16}\bfseries\color{foobarcolour}}{\thesubsection}{1em}{}
+\titleformat{\section}{\needspace{4\baselineskip}\fontsize{18}{18}\bfseries}{\thesection}{1em}{\hruleafter}
+\titleformat{\subsection}{\needspace{3\baselineskip}\fontsize{14}{16}\bfseries\color{foobarcolour}}{\thesubsection}{1em}{}
 
 
 \usepackage[helvet]{sfmath}
